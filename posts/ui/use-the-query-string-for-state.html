@@ -1,0 +1,5 @@
+What is the ideal place to store page level state, something that belongs only to the current page? In some local reactive variable? In a Vuex store? No, it should be in the query string.
+
+In the early days of SPAs, even moving between screens (or pages, if we use the web terminology) was something that very often did not manifest in url changes, wreaking havoc on back button functionality. Then, with the introduction of the History API, developers were able to mimic navigating between pages on screen changes. That is also what Vue router is doing.
+
+But why, you might ask. First of all, it allows you to bookmark the current page with all it's state, and even share it by just sending the full url. That alone makes it worth it.
