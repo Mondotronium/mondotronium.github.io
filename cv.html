@@ -4,24 +4,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<style>
-			@page  
-{ 
-    size: auto;   /* auto is the initial value */ 
-
-    /* this affects the margin in the printer settings */ 
-    margin: 25mm 25mm 25mm 25mm;  
-} 
 
 			* {
 				margin: 0;
 				padding: 0;
 			}
 			body {
-				/*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-				/*font-family: 'Baskerville';*/
 				font-family: 'Gill Sans';
-				/*font-family: 'Hiragino Sans';*/
-
 				line-height: 1.3;
 				font-weight: 300;
 
@@ -34,7 +23,14 @@
 			}
 
 			a {
+				padding:0 0.2rem;
+				margin:0 -0.2rem;
 				color: inherit;
+			}
+
+			a:hover {
+				background: #efefef;
+				border-radius: 0.2rem;
 			}
 
 			.city {
@@ -91,12 +87,14 @@
 
 			ul.tags li {
 				display: inline-block;
-				background: #efefef;
+				border: 1px solid rgb(200,200,200);
 				border-radius: 0.5rem;
-				padding:0.2rem 0.5rem;
-				color: rgb(120,120,120);
+				padding:0.18rem 0.5rem 0.14rem;
+				color: rgb(160,160,160);
 				font-size: small;
 			}
+
+
 
 			img {
 				transform: scaleX(-1);
@@ -122,40 +120,42 @@
 
 		<h2>Competencies</h2>
 		<dl>
-			<dt>Architect</dt>
-				<dd>
-					<ul>
-						<li><h3>Turn high-level product vision into technical and functional specifications.</h3></li>
-						<li>Asses project feasibility and select appropriate technologies.</li>
-						<li>Clearly explain complex and challenging technical concepts to non-technical stakeholders.</li>
-					</ul>
-					<ul class="tags">
-						<li>RDBMS</li>
-						<li>Docker</li>
-						<li>AWS</li>
-						<li>ElasticSearch</li>
-					</ul>
-				</dd>
+			
 			<dt>Leader</dt>
 				<dd>
 					<ul>
-						<li><h3>Define overall vision and long-term strategies for software products.</h3></li>
-						<li>Supervise development and oversee project progress.</li>
-						<li>Establish standards for testing, QA and delivery.</li>
-						<li>Hire, motivate and retain exceptional talent.</li>
-						<li>Provide guidance and mentoring for developers and engineers.</li>
+						<li><h3>Define overall vision and long-term roadmaps for software products.</h3></li>
+						<li>Supervise development and monitor progress to reach time to market goals.</li>
+						<li>Establish standards and processes for testing, QA and delivery.</li>
+						<li>Hire, mentor, motivate and retain exceptional engineers.</li>
 					</ul>
 					<ul class="tags">
+						<li>Agile</li>
 						<li>TDD</li>
 						<li>Jest</li>
 						<li>CI/CD</li>
 						<li>Jira</li>
 					</ul>
 				</dd>
+			<dt>Architect</dt>
+				<dd>
+					<ul>
+						<li><h3>Turn high-level product vision into technical and functional specifications.</h3></li>
+						<li>Explain complex and challenging technical concepts to all stakeholders.</li>
+						<li>Asses project feasibility and evaluate appropriate technologies.</li>
+					</ul>
+					<ul class="tags ll">
+						<li>RDBMS</li>
+						<li>NoSQL</li>
+						<li>Docker</li>
+						<li>AWS</li>
+						<li>ElasticSearch</li>
+					</ul>
+				</dd>
 			<dt>Engineer</dt>
 				<dd>
 					<ul>
-						<li><h3>Build reliable, scalable and fast web applications and APIs.</h3></li>
+						<li><h3>Build fast, reliable and scalable web applications and APIs.</h3></li>
 						<li>Build PWAs and native mobile applications for Android and iOS.</li>
 						<li>Build mission critical systems using functional programming.</li>
 					</ul>
@@ -175,11 +175,11 @@
 		<dl>
 			<dt>2019 – Now</dt>
 				<dd>
-					<h3>Co-founder and CTO</h3>
-					<h4>Lumiform – Berlin, Germany</h4>
-					<p>The first quality and safety management tool targeted for SMBs with full workflow management.</p>
+					<h3>Co-founder & CTO</h3>
+					<h4>Lumiform – Berlin</h4>
+					<p>A quality and safety management tool targeted for SMBs.</p>
 					<ul class="achievements">
-						<li>Planned all systems and infrastructure: databases, API, SPA, PWA and native mobile clients.</li>
+						<li>Planned all systems and infrastructure: DBs, API, SPA, PWA and native mobile clients.</li>
 						<li>Hired great developers for the backend, frontend, Android and iOS teams.</li>
 						<li>Enabled offline data sync supporting 100MB+ inspections with perfect data integrity.</li>
 						<li>Set engineering quality standards and established development processes.</li>
@@ -187,24 +187,23 @@
 				</dd>
 			<dt>2010 – 2016</dt>
 				<dd>
-					<h3>Founder and CTO</h3>
-					<h4>Koltozzbe – Budapest, Hungary</h4>
-					<p>The first real estate listings engine with street-level mapping support in Hungary, acquired in 2016.</p>
+					<h3>Co-founder & CTO</h3>
+					<h4>Koltozzbe – Budapest</h4>
+					<p>Hungary's first real estate listing engine with street-level maps, acquired in 2016.</p>
 					<ul class="achievements">
 						<li>Planned all systems: REST APIs, client SPA, back-office applications.</li>
-						<li>Planned the interfaces for all clients.</li>
 						<li>Hired the development team, supervised agile development.</li>
 						<li>Developed fully featured Android client.</li>
 					</ul>
 				</dd>
 			<dt>2005 – 2010</dt>
 				<dd>
-					<h3>Co-founder and CTO</h3>
-					<h4>Olcsobbat – Budapest, Hungary</h4>
+					<h3>Co-founder & CTO</h3>
+					<h4>Olcsobbat – Budapest</h4>
 					<p>The most popular shopping engine in Hungary, <a href="https://sanoma.com/release/sanoma-budapest-acquires-comparison-site-olcsobbat-hu/">acquired by Sanoma</a> in 2009.</p>
 					<ul class="achievements">
-						<li>Planned and developed all systems: databases, search engines, web and mobile applications.</li>
-						<li>Handled 5M+ listed products and 500K+ daily price updates with sub 50ms search responses.</li>
+						<li>Planned and built all systems: databases, search engines, web and mobile apps.</li>
+						<li>Handled 5M+ products and 500K+ daily price updates with sub 50ms search responses.</li>
 					</ul>
 				</dd>
 		</dl>
